@@ -1,0 +1,42 @@
+*
+{
+  font-family: "Audiowide", sans-serif, Arial, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+}
+h1, h2, h3, h4, h5, h6
+{
+  font-family: "Audiowide", serif, Arial, Times;
+  text-shadow: 3px 3px 3px #ababab;
+  letter-spacing: 5px;
+}
+h3
+{
+  font-size: 18px;
+}
+body
+{
+    background-image: linear-gradient(to right, grey, #151e2d )
+}
+
+li
+{
+  list-style-type: none; /* Remove bullets */
+  font-size: 1em;
+  padding: 5px;
+}
+
+ul
+{
+  margin: 0px;
+  padding: 10px;
+}
+.card
+{
+  background-image: url('../img/ball.png');
+  background-repeat: no-repeat;
+}
+.avatar
+{
+  width: 100%;
+  max-width:200px;
+}

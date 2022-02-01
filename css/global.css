@@ -23,12 +23,27 @@ li
   list-style-type: none; /* Remove bullets */
   font-size: 1em;
   padding: 5px;
+  text-align: left;
 }
 
 ul
 {
   margin: 0px;
   padding: 10px;
+  text-align: left;
+  float: left;
+  color: white;
+  width: 100%;
+}
+h2
+{
+  background-image: linear-gradient(to right, #151e2d , #000153);
+  color: white;
+}
+article h3
+{
+  background-color: green;
+  color: white;
 }
 .card
 {

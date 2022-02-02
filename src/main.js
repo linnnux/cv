@@ -23,51 +23,45 @@ var skills = {
                     {"skill" : "Sens du collectif"},
                     {"skill" : "Empathie"},
                     {"skill" : "Gestion du stress"}
-              ],
-              "backEnd":
-              [
-                  {"skill" : "PHP 7"},
-                  {"skill" : "symfony 4"},
+                ],
+                "backEnd":
+                [
+                    {"skill" : "PHP 7"},
+                    {"skill" : "symfony 4"},
+                    {"skill" : "JS"},
+                ],
+                "frontEnd":
+                [
+                  {"skill" : "HTML5"},
+                  {"skill" : "CSS3"},
+                  {"skill" : "w3.css"},
+                  {"skill" : "twig"},
                   {"skill" : "JS"},
-              ],
-              "frontEnd":
-              [
-                {"skill" : "HTML5"},
-                {"skill" : "CSS3"},
-                {"skill" : "w3.css"},
-                {"skill" : "twig"},
-                {"skill" : "JS"},
-                {"skill" : "PHP7"},
-                {"skill" : "w3.js"},
-                {"skill" : "jQuery"},
-            ],
-            "frontEndFrameWorks":
-            [
-              {"skill" : "w3.css"},
-              {"skill" : "w3.js"},
-              {"skill" : "twig"},
-          ],
-          "frameWorks":
-          [
-            {"skill" : "symfony 4"},
-            {"skill" : "node.JS"},
-            {"skill" : "express"},
-          ],
-          "versionning":
-          [
-            {"skill" : "git"},
-            {"skill" : "svn"},
-          ],
-          "ide":
-          [
-            {"skill" : "xCode"},
-            {"skill" : "Android Studio"},
-            {"skill" : "Atom"},
-          ],
-          "ftp":
-          [
-            {"skill" : "fileZilla"},
-          ],
+                  {"skill" : "PHP7"},
+                  {"skill" : "w3.js"},
+                  {"skill" : "jQuery"},
+                ],
+                "frameWorks":
+                [
+                  {"skill" : "symfony 4"},
+                  {"skill" : "node.JS"},
+                  {"skill" : "express"},
+                ],
+                "versionning":
+                [
+                  {"skill" : "git"},
+                  {"skill" : "svn"},
+                ],
+                "ide":
+                [
+                  {"skill" : "xCode"},
+                  {"skill" : "Android Studio"},
+                  {"skill" : "Atom"},
+                ],
+                "ftp":
+                [
+                  {"skill" : "fileZilla"},
+                ],
 
 
 };
@@ -75,14 +69,12 @@ var skills = {
 function myCallback()
 {
 
-  w3.displayObject("softSkills", skills);
-  w3.displayObject("backEnd", skills);
-  w3.displayObject("frontEnd", skills);
-  w3.displayObject("frameWorks", skills);
-  w3.displayObject("versionning", skills);
-  w3.displayObject("ide", skills);
-  w3.displayObject("ftp", skills);
+  for (var skill in skills)
+  {
+    w3.displayObject(skill, skills);
+  }
+
+
   w3.displayObject("id01", user);
-  getTeddies();
 
 }

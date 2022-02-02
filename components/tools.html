@@ -5,18 +5,17 @@
         <div class="w3-container w3-round w3-green w3-card" style="width:85%">85%</div>
       </div>
       <h3 class="w3-container w3-medium w3-left">versionning</h3>
-        <ul>
-          <li>git</li>
-          <li>svn</li>
+        <ul id="versionning">
+          <li w3-repeat="versionning">{{skill}}</li>
         </ul>
+
         <h3 class="w3-container w3-medium w3-left">IDE</h3>
-        <ul>
-          <li>Atom</li>
-          <li>Android Studio</li>
-          <li>xCode</li>
-        </ul>
+          <ul id="ide">
+            <li w3-repeat="ide">{{skill}}</li>
+          </ul>
+
         <h3 class="w3-container w3-medium w3-left">FTP</h3>
-        <ul>
-          <li>fileZilla</li>
-        </ul>
+            <ul id="ftp">
+              <li w3-repeat="ftp">{{skill}}</li>
+            </ul>
   </div>

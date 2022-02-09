@@ -62,7 +62,48 @@ var skills = {
                 [
                   {"skill" : "fileZilla"},
                 ],
-
+                "tasks":
+                [
+                  {"skill" : "installation linux"},
+                  {"skill" : "migration linux"},
+                  {"skill" : "installation windows x"},
+                  {"skill" : "migration windows x"},
+                  {"skill" : "mise à jour OS"},
+                  {"skill" : "configuration accèes au CPD"},
+                  {"skill" : "sauvegarde sur le CPD"},
+                  {"skill" : "installation serveur voIp"},
+                  {"skill" : "configuration client SIP"},
+                  {"skill" : "intégration d'équipements dans le réseau"},
+                  {"skill" : "installation de point d’accès wifi"},
+                  {"skill" : "réalisation de schéma du réseau avec packet tracer"},
+                ],
+                "os":
+                [
+                  {"skill" : "iOS"},
+                  {"skill" : "windows x"},
+                  {"skill" : "linux"},
+                  {"skill" : "android"},
+                  {"skill" : "win server"},
+                  {"skill" : "linux server"},
+                  {"skill" : "Asterix voiIP server"},
+                ],
+                "divers":
+                [
+                  {"skill" : "packet tracer"},
+                  {"skill" : "virtual machine"},
+                  {"skill" : "fileZilla"},
+                  {"skill" : "realVNC"},
+                  {"skill" : "team viewer"},
+                  {"skill" : "glpi"},
+                  {"skill" : "Active Directory"},
+                  {"skill" : "UO"},
+                  {"skill" : "GPO"},
+                  {"skill" : "DHCP"},
+                  {"skill" : "DNS"},
+                  {"skill" : "CPD"},
+                  {"skill" : "WDS"},
+                  {"skill" : "automatisation de tâches"},
+                ],
 
 };
 

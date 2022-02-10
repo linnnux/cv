@@ -30,14 +30,19 @@ var skills = {
                     {"skill" : "symfony 4"},
                     {"skill" : "JS"},
                 ],
+                "templating":
+                [
+                    {"skill" : "twig"},
+                ],
                 "frontEnd":
                 [
-                  {"skill" : "HTML5"},
-                  {"skill" : "CSS3"},
-                  {"skill" : "w3.css"},
-                  {"skill" : "twig"},
+                  {"skill" : "HTML 5"},
+                  {"skill" : "CSS 3"},
                   {"skill" : "JS"},
-                  {"skill" : "PHP7"},
+                ],
+                "library":
+                [
+                  {"skill" : "w3.css"},
                   {"skill" : "w3.js"},
                   {"skill" : "jQuery"},
                 ],
@@ -46,6 +51,11 @@ var skills = {
                   {"skill" : "symfony 4"},
                   {"skill" : "node.JS"},
                   {"skill" : "express"},
+                ],
+                "seo":
+                [
+                  {"skill" : "w3c standards"},
+                  {"skill" : "google insight"},
                 ],
                 "versionning":
                 [

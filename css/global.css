@@ -3,11 +3,22 @@
   font-family: "Audiowide", sans-serif, Arial, "Times New Roman", Times, serif;
   letter-spacing: 1px;
 }
+body
+{
+  max-width: 1500px;
+  text-align: center;
+  margin: auto;
+}
 h1, h2, h3, h4, h5, h6
 {
   font-family: "Audiowide", serif, Arial, Times;
   text-shadow: 3px 3px 3px #ababab;
   letter-spacing: 5px;
+}
+h2
+{
+  background-image: linear-gradient(to right, #151e2d , #000153);
+  color: white;
 }
 h3
 {
@@ -35,11 +46,7 @@ ul
   color: white;
   width: 100%;
 }
-h2
-{
-  background-image: linear-gradient(to right, #151e2d , #000153);
-  color: white;
-}
+
 article h3
 {
   background-color: green;
@@ -54,4 +61,13 @@ article h3
 {
   width: 100%;
   max-width:200px;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px)
+{
+  h2
+  {
+    font-size: 16px;
+  }
 }

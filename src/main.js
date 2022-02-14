@@ -28,6 +28,8 @@ var skills = {
                     {"skill" : "PHP 7"},
                     {"skill" : "symfony 4"},
                     {"skill" : "JS"},
+                    {"skill" : "node.JS"},
+
                 ],
                 "templating":
                 [
@@ -48,7 +50,6 @@ var skills = {
                 "frameWorks":
                 [
                   {"skill" : "symfony 4"},
-                  {"skill" : "node.JS"},
                   {"skill" : "express"},
                 ],
                 "seo":

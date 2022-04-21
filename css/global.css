@@ -63,6 +63,15 @@ article h3
   max-width:200px;
 }
 
+.stats-gradient-low {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+.stats-gradient-medium {
+  background-image: linear-gradient(to right, rgba(255,204,0,.2),  rgba(255,153,0,1));
+}
+.stats-gradient-high {
+  background-image: linear-gradient(to right, rgba(0,255,0,.2),  rgba(0,255,0,1));
+}
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px)
 {

@@ -23,6 +23,9 @@ h2
 h3
 {
   font-size: 18px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+
 }
 body
 {
@@ -49,8 +52,14 @@ ul
 
 article h3
 {
+  font-size: 14px;
+  text-align: left;
   background-color: green;
+
   color: white;
+  text-decoration: underline;
+
+  text-decoration-color: rgba(0, 255, 128, 0.5);
 }
 .card
 {

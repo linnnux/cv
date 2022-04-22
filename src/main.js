@@ -51,11 +51,13 @@ var skills = {
                 [
                   {"skill" : "symfony 4"},
                   {"skill" : "express"},
+                  {"skill" : "svelt"},
                 ],
                 "seo":
                 [
                   {"skill" : "w3c standards"},
                   {"skill" : "google insight"},
+                  {"skill" : "s.e.o audit"},
                 ],
                 "versionning":
                 [

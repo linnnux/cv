@@ -8,7 +8,14 @@ body
   max-width: 1500px;
   text-align: center;
   margin: auto;
+  
 }
+body
+{
+    background-image: linear-gradient(to right, grey, #151e2d )
+}
+
+
 h1, h2, h3, h4, h5, h6
 {
   font-family: "Audiowide", serif, Arial, Times;
@@ -19,17 +26,16 @@ h2
 {
   background-image: linear-gradient(to right, #151e2d , #000153);
   color: white;
+  text-align:left;
+  background-image: linear-gradient(to right, rgba(0,255,255,0.3) , rgba(0,0,0,0));width:100%;
 }
+
 h3
 {
   font-size: 18px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
 
-}
-body
-{
-    background-image: linear-gradient(to right, grey, #151e2d )
 }
 
 li
@@ -49,7 +55,20 @@ ul
   color: white;
   width: 100%;
 }
-
+aside h1
+{
+  width : 100%;
+  color:white;
+  font-size:xlarge;
+}
+aside .w3-card-4
+{
+  width:100%;  
+  background-image: linear-gradient(to right, #151e2d , #000153);
+  border-radius: 70%  70% 70% 70%; 
+  padding-top:20px; 
+  padding-bottom:20px;
+}
 article h3
 {
   font-size: 14px;
@@ -61,11 +80,7 @@ article h3
 
   text-decoration-color: rgba(0, 255, 128, 0.5);
 }
- h2
-{
- text-align:left;
- background-image: linear-gradient(to right, rgba(0,255,255,0.3) , rgba(0,0,0,0));width:100%;
-}
+
 .card
 {
   background-image: url('../img/ball.png');
@@ -77,18 +92,35 @@ article h3
   max-width:200px;
 }
 
-.stats-gradient-low {
+.stats-gradient-low 
+{
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 }
-.stats-gradient-medium {
+.stats-gradient-medium 
+{
   background-image: linear-gradient(to right, rgba(255,204,0,.2),  rgba(255,153,0,1));
 }
-.stats-gradient-high {
+.stats-gradient-high 
+{
   background-image: linear-gradient(to right, rgba(0,255,0,.2),  rgba(0,255,0,1));
 }
+
+
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px)
 {
+  
+  .w3-container
+  {
+    padding:2px;
+    margin:2px;
+  }
+
+  aside
+  {
+    padding:0px;
+  }
+  
   h2
   {
     font-size: 16px;

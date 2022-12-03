@@ -2,7 +2,8 @@
 var user = {
             "firstName" : "nassim",
             "lastName"  : "meziani",
-            "jobTitle"  : "Consultant IT"
+            "jobTitle"  : "Consultant IT",
+            "year"  : new Date().getFullYear()
            };
 
 var skills = {
@@ -28,18 +29,18 @@ var skills = {
                     {"skill" : "PHP 7"},
                     {"skill" : "symfony 4"},
                     {"skill" : "JS"},
-                    {"skill" : "node.JS"},
+                    {"skill" : "node.JS"}
 
                 ],
                 "templating":
                 [
-                    {"skill" : "twig"},
+                    {"skill" : "twig"}
                 ],
                 "frontEnd":
                 [
                   {"skill" : "HTML 5"},
                   {"skill" : "CSS 3"},
-                  {"skill" : "JS"},
+                  {"skill" : "JS"}
                 ],
                 "library":
                 [
@@ -51,28 +52,28 @@ var skills = {
                 [
                   {"skill" : "symfony 4"},
                   {"skill" : "express"},
-                  {"skill" : "svelt"},
+                  {"skill" : "svelt"}
                 ],
                 "seo":
                 [
                   {"skill" : "w3c standards"},
                   {"skill" : "google insight"},
-                  {"skill" : "s.e.o audit"},
+                  {"skill" : "s.e.o audit"}
                 ],
                 "versionning":
                 [
                   {"skill" : "git"},
-                  {"skill" : "svn"},
+                  {"skill" : "svn"}
                 ],
                 "ide":
                 [
                   {"skill" : "xCode"},
                   {"skill" : "Android Studio"},
-                  {"skill" : "Atom"},
+                  {"skill" : "Atom"}
                 ],
                 "ftp":
                 [
-                  {"skill" : "fileZilla"},
+                  {"skill" : "fileZilla"}
                 ],
                 "tasks":
                 [
@@ -87,7 +88,7 @@ var skills = {
                   {"skill" : "configuration client SIP"},
                   {"skill" : "intégration d'équipements dans le réseau"},
                   {"skill" : "installation de point d’accès wifi"},
-                  {"skill" : "réalisation de schéma du réseau avec packet tracer"},
+                  {"skill" : "réalisation de schéma du réseau avec packet tracer"}
                 ],
                 "os":
                 [
@@ -97,7 +98,7 @@ var skills = {
                   {"skill" : "android"},
                   {"skill" : "win server"},
                   {"skill" : "linux server"},
-                  {"skill" : "Asterix voiIP server"},
+                  {"skill" : "Asterix voiIP server"}
                 ],
                 "divers":
                 [
@@ -114,20 +115,50 @@ var skills = {
                   {"skill" : "DNS"},
                   {"skill" : "CPD"},
                   {"skill" : "WDS"},
-                  {"skill" : "automatisation de tâches"},
+                  {"skill" : "automatisation de tâches"}
                 ],
 
 };
 
-function myCallback()
+async function myCallback()
 {
+
 
   for (var skill in skills)
   {
     w3.displayObject(skill, skills);
   }
 
+}
 
-  w3.displayObject("id01", user);
+function displayTitle()
+{
+
+  //w3.displayObject("id01", user);
+  displayData()
 
 }
+
+function displayData() 
+{
+  document.getElementById('id01').innerHTML=`<strong> <i class="w3-col w3-medium">CV ${user.year}</i>${user.jobTitle}</strong> `;
+
+}
+
+let title = new Promise(function(myResolve, myReject) 
+{
+ 
+  if (user) 
+  {
+    myResolve(user);
+  } 
+  else 
+  {
+    myReject("Error");
+  }
+});
+
+title.then(
+  function(value){displayData(user);},
+  function(error){displayData(error);}
+);

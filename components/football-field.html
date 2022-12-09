@@ -1,10 +1,16 @@
-<div class="w3-display-container w3-text-white w3-tiny">
+<div class="w3-display-container w3-text-white w3-tiny w3-card">
   <img src="img/football_field.png" alt="football field" style="width:100%">
 
   <!-- back -->
-  <div class="w3-padding w3-display-right">Symphony <span class="w3-tag w3-circle w3-green">1</span> </div>
-  <div class="w3-padding w3-display-topright"><span class="w3-tag w3-circle w3-green">2</span> <br> PHP </div>
-  <div class="w3-padding w3-display-bottomright"><span class="w3-tag w3-circle w3-green">3</span><br> node.JS</div>
+  <div class="w3-padding w3-display-right">Git <span class="w3-tag w3-circle w3-green">1</span> </div>
+
+  <div class="w3-padding w3-display-topright"  style='margin-top:65px;margin-right:40px;'><span class="w3-tag w3-circle w3-green">5</span><br>Symphony</div>
+
+  <div class="w3-padding w3-display-topright"><span class="w3-tag w3-circle w3-green" style='margin-top:30px;margin-right:30px;'>2</span> <br>PHP  </div>
+
+  <div class="w3-padding w3-display-bottomright" style='margin-bottom:20px;margin-right:20px;'><span class="w3-tag w3-circle w3-green">3</span><br> node.JS</div>
+  <div class="w3-padding w3-display-bottomright"  style='margin-bottom:65px;margin-right:50px;'><span class="w3-tag w3-circle w3-green">4</span><br> express</div>
+
 
   <!-- middle -->
   <div class="w3-padding w3-display-topmiddle"><span class="w3-tag w3-circle w3-green">8</span><br> W3.js</div>
@@ -12,9 +18,19 @@
   <div class="w3-padding w3-display-bottommiddle"><span class="w3-tag w3-circle w3-green">6</span><br> jQuery</div>
 
   <!-- front -->
-  <div class="w3-padding w3-display-topleft"><span class="w3-tag w3-circle w3-green">7</span><br> HTML</div>
-  <div class="w3-padding w3-display-left"><span class="w3-tag w3-circle w3-green">9</span>  Twig</div>
-  <div class="w3-padding w3-display-bottomleft"><span class="w3-tag w3-circle w3-green">11</span><br> CSS</div>
+  <!-- <div class="w3-padding w3-display-topleft" style='margin-top:50px;margin-left:100px;'><span class="w3-tag w3-circle w3-green" >22</span><br> react</div>
+  -->
+  <div class="w3-padding w3-display-topleft"    style='margin-top:20px;margin-left:30px;'><span class="w3-tag w3-circle w3-green">7</span><br> twig</div>
+  <div class="w3-padding w3-display-left"       style='margin-left:40px;'><span class="w3-tag w3-circle w3-green">9</span>  html</div>
+  <div class="w3-padding w3-display-bottomleft" style='margin-bottom:20px;margin-left:30px;'><span class="w3-tag w3-circle w3-green">11</span><br> CSS</div>
 
+
+
+</div>
+
+<div id='idPlayers' class="w3-container w3-text-white w3-tiny w3-margin-top">
+  <select id="idPlayers">
+    <option w3-repeat="players">{{number}} - {{name}} - {{office}}</option>
+  </select>
 
 </div>
